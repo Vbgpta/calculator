@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script> 
+    <title>Document</title>
+    <style>
+        p{
+            padding: 20px;
+            font: 20px sans-serif;
+            background: #f2f2f2;
+        }
+        p.highlight{
+            background: yellow;
+        }
+    </style>
+</head>
+<body>
+    <script>
+       $(document).ready(function(){
+        $('p').hover(function(){
+            $(this).addClass('highlight');
+        }, function(){
+          $(this).removeClass('highlight');
+        });
+    });   
+    </script>
+
+    <p>Place mouse on me</p>
+    <p>Place mouse on me</p>
+    <p>place mouse on me</p>
+</body>
+</html>
